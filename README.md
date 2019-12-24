@@ -5,3 +5,5 @@ Given an array of integers. Find a peak element in it. An array element is peak 
 
 2. Find Local Minima For 1D Array [Time Complexity : O(Log n)]
 An element arr[x] is a local minimum if it is less than or equal to both its neighbors. 
+
+3. An extrema is an elements which is either greater than its both of neighbors or less than its both neighbors.
