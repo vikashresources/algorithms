@@ -13,4 +13,4 @@ An element arr[x] is a local minimum if it is less than or equal to both its nei
 a) The subarray which is already sorted.
 b) Remaining subarray which is unsorted.
 
-In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
+In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray. Selection sort is in-place sorting and by default not stable. 
