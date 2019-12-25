@@ -9,13 +9,8 @@ class sortStableSelection
      // Iterate through array elements 
      for (int i = 0; i < n - 1; i++)  
      { 
-
-         // Loop invariant : Elements till  
-         // a[i - 1] are already sorted. 
-
-         // Find minimum element from  
-         // arr[i] to arr[n - 1]. 
-         int min = i; 
+         int min = i;
+      // check for index of minimum element
          for (int j = i + 1; j < n; j++) 
              if (a[min] > a[j]) 
                  min = j; 
@@ -27,7 +22,7 @@ class sortStableSelection
              a[min] = a[min - 1]; 
              min--; 
          } 
-           
+         // set position of current min  
          a[i] = key; 
      } 
  } 
