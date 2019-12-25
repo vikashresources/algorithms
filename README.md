@@ -7,3 +7,10 @@ Given an array of integers. Find a peak element in it. An array element is peak 
 An element arr[x] is a local minimum if it is less than or equal to both its neighbors. 
 
 3. An extrema is an elements which is either greater than its both of neighbors or less than its both neighbors. First and last element can't be extrema.
+
+4. The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+
+a) The subarray which is already sorted.
+b) Remaining subarray which is unsorted.
+
+In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
