@@ -14,3 +14,5 @@ a) The subarray which is already sorted.
 b) Remaining subarray which is unsorted.
 
 In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray. Selection sort is in-place sorting and by default not stable. 
+
+5. Stable Selection Sort: After sorting, relative position of elements inm output should maintain same order as in put. To achieve it, we need to do away with swap & instead set the minimum element to its required position and shift forward rest of the array. It's done continiously till full array is sorted.
