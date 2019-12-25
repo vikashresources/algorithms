@@ -2,28 +2,24 @@ package algorithm;
 // Java program for implementation of Selection Sort 
 class sortSelection
 { 
-	void sort(int arr[]) 
+	void sort(int arr[],int size) 
 	{ 
-		int n = arr.length; 
-
-		// One by one move boundary of unsorted subarray 
-		for (int i = 0; i < n-1; i++) 
+		int i,j,min,temp;
+		
+		for (i = 0; i < size-1; i++) 
 		{ 
-			// Find the minimum element in unsorted array 
-			int min_idx = i; 
-			for (int j = i+1; j < n; j++) 
-				if (arr[j] < arr[min_idx]) 
-					min_idx = j; 
+			min = i; 
+			for (j = i+1; j < size; j++) {
+				if (arr[j] < arr[min]) 
+					min = j; }
 
-			// Swap the found minimum element with the first 
-			// element 
-			int temp = arr[min_idx]; 
-			arr[min_idx] = arr[i]; 
+			temp = arr[min]; 
+			arr[min] = arr[i]; 
 			arr[i] = temp; 
 		} 
 	} 
 
-	// Prints the array 
+
 	void printArray(int arr[]) 
 	{ 
 		int n = arr.length; 
@@ -32,12 +28,11 @@ class sortSelection
 		System.out.println(); 
 	} 
 
-	// Driver code to test above 
 	public static void main(String args[]) 
 	{ 
 		sortSelection ob = new sortSelection(); 
 		int arr[] = {64,25,12,22,11}; 
-		ob.sort(arr); 
+		ob.sort(arr,arr.length); 
 		System.out.println("Sorted array"); 
 		ob.printArray(arr); 
 	} 
