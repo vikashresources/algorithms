@@ -6,23 +6,21 @@ class sortStableSelection
 { 
  static void stableSelectionSort(int[] a, int n) 
  { 
-     // Iterate through array elements 
-     for (int i = 0; i < n - 1; i++)  
+	 int i, j, min;	
+     for (i = 0; i < n - 1; i++)  
      { 
-         int min = i;
-      // check for index of minimum element
-         for (int j = i + 1; j < n; j++) 
+         min = i; 
+         for (j = i + 1; j < n; j++) 
              if (a[min] > a[j]) 
                  min = j; 
-
-         // Move minimum element at current i. 
+ 
          int key = a[min]; 
          while (min > i)  
          { 
              a[min] = a[min - 1]; 
              min--; 
          } 
-         // set position of current min  
+           
          a[i] = key; 
      } 
  } 
@@ -35,7 +33,6 @@ class sortStableSelection
      System.out.println(); 
  } 
 
- // Driver code 
  public static void main (String[] args)  
  { 
      int[] a = { 4, 5, 3, 2, 4, 1 }; 
@@ -43,4 +40,4 @@ class sortStableSelection
      stableSelectionSort(a, n); 
      printArray(a, n); 
  } 
-} 
+}
