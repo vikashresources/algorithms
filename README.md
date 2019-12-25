@@ -8,7 +8,7 @@ An element arr[x] is a local minimum if it is less than or equal to both its nei
 
 3. An extrema is an elements which is either greater than its both of neighbors or less than its both neighbors. First and last element can't be extrema.
 
-4. The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+4. The selection sort (Time Complexity: O(n2) as there are two nested loops.Auxiliary Space: O(1)) algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
 
 a) The subarray which is already sorted.
 b) Remaining subarray which is unsorted.
