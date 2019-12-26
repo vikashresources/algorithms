@@ -18,4 +18,4 @@ In every iteration of selection sort, the minimum element (considering ascending
 
 7. Optimized Bubble Sort: It's similar to bubble sort except here, additional loops are avoided if array is already or has sorted out. This increases optimization level and improves time complexity. So worst case compexity of bubble sort O(n2) becomes O(n) in best case improved version. Space complexity remains O(1) auxillary.
 
-8. Insertion sort picks element one by one and places those element at their right place in the sorted list of elements. So their are n-1 passes to sort n items and its worst case complexity is O(n2).
+8. Insertion sort picks element one by one and places those element at their right place in the sorted list of elements. So their are n-1 passes to sort n items and its worst case complexity is O(n2). If array is already sorted which is best case then its complexity is O(n).
