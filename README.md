@@ -18,3 +18,5 @@ In every iteration of selection sort, the minimum element (considering ascending
 5. Stable Selection Sort: After sorting, relative position of elements inm output should maintain same order as in put. To achieve it, we need to do away with swap & instead set the minimum element to its required position and shift forward rest of the array. It's done continiously till full array is sorted.
 
 6. Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+
+7. Optimized Bubble Sort: It's similar to bubble sort except here, additional loops are avoided if array is already or has sorted out. This increases optimization level and improves time complexity. So worst case compexity of bubble sort O(n2) becomes O(n) in best case improved version. Space complexity remains O(1) auxillary.
