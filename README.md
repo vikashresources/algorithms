@@ -17,3 +17,5 @@ In every iteration of selection sort, the minimum element (considering ascending
 6. Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
 
 7. Optimized Bubble Sort: It's similar to bubble sort except here, additional loops are avoided if array is already or has sorted out. This increases optimization level and improves time complexity. So worst case compexity of bubble sort O(n2) becomes O(n) in best case improved version. Space complexity remains O(1) auxillary.
+
+8. Insertion sort picks element one by one and places those element at their right place in the sorted list of elements. So their are n-1 passes to sort n items and its worst case complexity is O(n2).
