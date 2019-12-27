@@ -19,3 +19,23 @@ In every iteration of selection sort, the minimum element (considering ascending
 7. Optimized Bubble Sort: It's similar to bubble sort except here, additional loops are avoided if array is already or has sorted out. This increases optimization level and improves time complexity. So worst case compexity of bubble sort O(n2) becomes O(n) in best case improved version. Space complexity remains O(1) auxillary.
 
 8. Insertion sort picks element one by one and places those element at their right place in the sorted list of elements. So their are n-1 passes to sort n items and its worst case complexity is O(n2). If array is already sorted which is best case then its complexity is O(n).
+
+# D&C Complexity
+For D&C problem set, master theorem can be used to calculate the complexity of alogrithm:
+T(n) = aT(n/b) + ø((n^k)logpn)
+Where n is the size of the problem.
+
+a = number of subproblems in recursion, a > 0
+
+n/b = size of each subproblem defined, n, b > 0
+
+For solving this type of problem, we will use the following solutions,
+
+If a>bk, then T(n) = ∅ (nlogba)
+If a = bk, then
+If p> -1, then T(n) = ∅(nlogba logp+1n)
+If p = -1, then T(n) = ∅(nlogba loglogn)
+If p < -1, then T(n) = ∅(nlogba)
+If a<bk , then
+If p> = 0, then T(n)= ∅(nklogpn)
+If p< 0, then T(n) = ∅(nk)
