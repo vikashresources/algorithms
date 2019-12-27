@@ -16,7 +16,7 @@ public class MergeSort {
 	
 	static void merge(int[] A,int low,int mid,int high) {
 		int i,j,k;
-		int[] B = null;
+		int B[] = new int [5]; 
 		i = low;
 		j = mid+1;
 		k=low;
@@ -38,8 +38,7 @@ public class MergeSort {
 				k++;
 			}
 		}
-		
-		if(j > high) {
+		else {
 			while(i<=mid) {
 				B[k] = A[i];
 				i++;
@@ -47,7 +46,7 @@ public class MergeSort {
 			}
 		}
 		
-		for(int l=0;l<k;l++)
+		for(int l=low;l<=high;l++)
 			A[l] = B[l];
 		
 	}
