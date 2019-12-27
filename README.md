@@ -22,6 +22,8 @@ In every iteration of selection sort, the minimum element (considering ascending
 
 9. Quicksort [worst case complexity: O(n2), Best Case O(nlogn) & Avergae Case O(nlogn)] is a D&C algorithm for sorting which means it uses recursive solution. One element is selected as pivot element, usually at the begining. However choice of the position of the pivot element determines its complexity. Then array is re-arranged in such a way that all the elements smaller than pivot element are placed left to it and all the elements greator than are placed to right of pivot element. This places pivot element at its correct position. Then array is paritioned into two sub modules paritioned at pivot point and all elements in array is sorted recursively. Its space complexity remain at O(1). 
 
+10. Mergesort [Complexity: O(nlogn)] is a D&C algorithm for sorting where first array is divided into subarrays till the point where no further division is possible. After that array is sorted and merged back to generate fully sorted array.
+
 # D&C Complexity
 For D&C problem set, master theorem can be used to calculate the complexity of alogrithm:
 T(n) = aT(n/b) + ø((n^k)logpn)
