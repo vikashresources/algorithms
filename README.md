@@ -5,7 +5,7 @@ Given an array of integers. Find a peak element in it. An array element is peak 
 
 2. Find Local Minima For 1D Array [Time Complexity : O(Log n)]
 An element arr[x] is a local minimum if it is less than or equal to both its neighbors. 
-
+74a/
 3. An extrema is an elements which is either greater than its both of neighbors or less than its both neighbors. First and last element can't be extrema.
 
 4. The selection sort (Time Complexity: O(n2) as there are two nested loops.Auxiliary Space: O(1)) algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array. a) The subarray which is already sorted. b) Remaining subarray which is unsorted.
@@ -23,6 +23,8 @@ In every iteration of selection sort, the minimum element (considering ascending
 9. Quicksort [worst case complexity: O(n2), Best Case O(nlogn) & Avergae Case O(nlogn)] is a D&C algorithm for sorting which means it uses recursive solution. One element is selected as pivot element, usually at the begining. However choice of the position of the pivot element determines its complexity. Then array is re-arranged in such a way that all the elements smaller than pivot element are placed left to it and all the elements greator than are placed to right of pivot element. This places pivot element at its correct position. Then array is paritioned into two sub modules paritioned at pivot point and all elements in array is sorted recursively. Its space complexity remain at O(1). 
 
 10. Mergesort [Complexity: O(nlogn)] is a D&C algorithm for sorting where first array is divided into subarrays till the point where no further division is possible. After that array is sorted and merged back to generate fully sorted array.
+
+11. Heapsort O(N): Heap sort is a comparison based sorting technique based on Binary Heap data structure. Here sorting takes place as if we are deleting elements from Max Heap Complete Binary Tree. Complete Binary tree is where all elements are at same level except possibly last level where elements are at most left aligned. A Binary Heap is a Complete Binary Tree where items are stored in a special order such that value in a parent node is greater(or smaller) than the values in its two children nodes. Binary heap tree can be represented as an array which is also space efficient. If the parent node is stored at index I, the left child can be calculated by 2 * I + 1 and right child by 2 * I + 2 (assuming the indexing starts at 0). Overall time complexity of Heap Sort is O(nLogn).
 
 # D&C Complexity
 For D&C problem set, master theorem can be used to calculate the complexity of alogrithm:
